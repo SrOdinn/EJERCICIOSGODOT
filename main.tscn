@@ -10,4 +10,11 @@ script = ExtResource("2")
 [node name="Player" parent="." instance=ExtResource("1")]
 position = Vector2(480, 270)
 
+[node name="RoundTimer" type="Timer" parent="."]
+wait_time = 30.0
+one_shot = true
+autostart = false
+
 [connection signal="interact_requested" from="Player" to="." method="_on_player_interact_requested"]
+
+[connection signal="timeout" from="RoundTimer" to="." method="_on_round_timer_timeout"]
