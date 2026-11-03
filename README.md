@@ -1,10 +1,10 @@
-# Ejercicios Godot T2.2
+# Ejercicios Godot T2.3
 
-Ejercicios de señales y temporizadores hechos con Godot 4.
+Ejemplo de prototipo, puntuación, señales y temporizador hecho con Godot 4.
 Para abrirlo, importar el archivo project.godot desde Godot.
 Pulsar F5 para ejecutar Main: W, A, S y D mueven al personaje.
-Espacio envía una interacción y aparece Interacción recibida en Salida.
-A los 30 segundos termina la ronda y el jugador deja de responder.
+Espacio suma un punto si estás a 48 píxeles o menos del centro del objetivo amarillo. Tras acertar, el objetivo se recoloca aleatoriamente en horizontal.
+A los 30 segundos termina la ronda, el jugador deja de responder y se muestra el resultado.
 Detener con F8 y volver a pulsar F5 para empezar otra ronda.
 
 ## Tutorial del botón y el temporizador
@@ -15,7 +15,8 @@ El icono aparece y desaparece cada segundo, incluso con el movimiento detenido.
 
 ## Archivos
 
-- main.tscn y main.gd: escena principal y final de la ronda.
+- main.tscn y main.gd: escena principal, cercanía, puntos y final de la ronda.
+- target.tscn: objetivo reutilizable sin script.
 - player/: escena reutilizable y movimiento del jugador.
 - tutorial/: ejemplo del icono, botón y parpadeo.
 - assets/: imágenes usadas en las escenas.
