@@ -1,14 +1,26 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=4 format=3]
 
 [ext_resource type="PackedScene" path="res://player/player.tscn" id="1"]
 
 [ext_resource type="Script" path="res://main.gd" id="2"]
+[ext_resource type="PackedScene" path="res://target.tscn" id="3"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("2")
 
 [node name="Player" parent="." instance=ExtResource("1")]
 position = Vector2(480, 270)
+
+[node name="Target" parent="." instance=ExtResource("3")]
+position = Vector2(680, 270)
+
+[node name="StatusLabel" type="Label" parent="."]
+offset_left = 24.0
+offset_top = 20.0
+offset_right = 360.0
+offset_bottom = 52.0
+theme_override_font_sizes/font_size = 24
+text = "Puntos: 0"
 
 [node name="RoundTimer" type="Timer" parent="."]
 wait_time = 30.0
