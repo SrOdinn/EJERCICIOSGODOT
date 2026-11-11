@@ -12,6 +12,10 @@ Incluye el escenario «Al Casi, Pero No», sus colisiones, una cerveza que se re
 
 [Instrucciones del proyecto](Torrente_v3/LEEME.md)
 
+## Mejora del mapa jugable
+
+Actualizado el escenario con la decoración nueva, los pasillos despejados y sus hitboxes. Las cervezas aparecen en puntos accesibles desde la entrada.
+
 ## Ejercicios anteriores
 
 Los ejercicios T2.3 y el tutorial se conservan en la raíz del repositorio. El `project.godot` de la raíz abre esos ejercicios; para la entrega hay que abrir el de **Torrente_v3**.

@@ -17,7 +17,7 @@ Comprobado con Godot 4.7.2.
 - `scripts/player.gd`: movimiento, animaciones y turbo.
 - `scripts/penultima.gd`: marcador y recogida por cercanía, comprobando que no haya una pared entre ambos.
 - `scripts/map.gd`: lista de posiciones válidas guardada en la escena.
-- `scenes/casino.tscn`: imagen del casino, colisiones y 277 posiciones posibles para la jarra.
+- `scenes/casino.tscn`: imagen del casino, colisiones y 907 posiciones posibles para la jarra.
 - `assets/colisiones.png`: máscara proporcionada como referencia para esas colisiones.
 
 Se han quitado los otros tres escenarios, sus imágenes, los diseños anteriores,
@@ -35,7 +35,7 @@ de la imagen artística. Por tanto, se conservan las simplificaciones y los paso
 abiertos que pediste, aunque algún dibujo del escenario ocupe ese espacio.
 La entrada inferior tiene un límite exterior para no salir de la pantalla.
 
-Las 277 posiciones de aparición pertenecen al recorrido conectado con la entrada.
+Las 907 posiciones de aparición pertenecen al recorrido conectado con la entrada.
 Se ha dejado margen para los pies del personaje y para mostrar la jarra.
 La nueva posición está al menos a 160 píxeles del jugador.
 Los pequeños huecos aislados de la máscara no se usan para colocar cervezas.
@@ -48,10 +48,10 @@ Las colisiones estan hechas con chatGPT y yo las he editado para mejorar la juga
 
 ## Comprobaciones realizadas
 
-Importación y ejecución en Godot, 277 posiciones sin colisión para los pies,
+Importación y ejecución en Godot, 907 posiciones sin colisión para los pies,
 100 recogidas consecutivas sin pulsar teclas, una única jarra reutilizada,
 turbo acumulable de 2 segundos, vuelta a velocidad normal, final de partida,
 reinicio y desplazamiento contra la fuente con turbo sin atravesarla.
 También se ha revisado una captura de la partida.
 
-El proyecto de Descargas se conserva intacto. Esta carpeta es la versión nueva.
+Mapa actualizado: decoración familiar, pasos laterales despejados y entrada marcada con dos paredes. Las colisiones y los puntos de aparición se han recalculado con la máscara nueva.
